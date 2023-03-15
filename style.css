@@ -1,0 +1,391 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container { 
+    max-width: 100%;
+    /* background-image: url(Rectangle.png); */
+    background: rgb(45,45,45);
+    background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(24,56,86,1) 60%, rgba(8,43,76,1) 100%);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.header {
+    display: flex;
+    max-width: 100%;
+    padding: 24px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.menu-list { 
+    display: flex;
+    float: right;
+    flex-direction: row;
+}
+
+.menu-item { 
+    list-style: none;
+    padding-left: 64px;
+}
+
+.menu-item-link { 
+    text-decoration: none;
+    font-size: 20px;
+    font-family: DTPhudu-Bold;
+    color: var(--white);
+}
+
+/* Ket thuc Header */
+
+.intro { 
+    display: flex;
+    max-width: 100%;
+    padding: 36px;
+    align-items: start;
+}
+.intro-left { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.intro-left-title { 
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'DTPhudu-Bold';
+    line-height: 1.6;
+}
+.intro-left-sub-title { 
+    display: block;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'DTPhudu-Bold';
+    line-height: 1.6;
+    position: relative;
+    margin: 16px 0;
+}
+
+.intro-left-sub-title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    left: 0;
+    top: -16px;
+    background-color: var(--white);
+}
+.intro-left-p { 
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--gray);
+    font-family: Futura-Regular;
+}
+.intro-right { 
+    display: block;
+}
+.intro-right-img { 
+    float: right;
+    max-width: 70%;
+}
+/* Ket thuc phan introduction */
+
+.product { 
+    
+}
+.product-intro { 
+    margin-top: 64px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    
+}
+.product-intro-title { 
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'DTPhudu-Bold';
+    position: relative;
+    padding: 16px;
+    max-width: 700px;
+    background-color: var(--orange);
+    text-align: center;
+    border-radius: 40px;
+
+}
+.product-contain { 
+    padding: 36px;
+    position: relative;
+}
+.product-footer {
+    margin: 32px 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+}
+.product-title { 
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'DTPhudu-Bold';
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+.product-wrap { 
+    
+}
+.product-item { 
+    list-style: none;
+}
+.product-item-img { 
+    width: 100%;
+    
+}
+/* Ket thuc phan production */
+
+.contact{ 
+    width: 100%;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title{ 
+    text-align: center;
+    display: block;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'DTPhudu-Bold';
+    line-height: 1.6;
+    position: relative;
+    margin: 16px 0;
+}
+.contact-list{ 
+    display: flex;
+    flex-direction: column;
+}
+.contact-item{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+.item-icon{ 
+    max-width: 50px;
+}
+.item-text{ 
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-family: 'DTPhudu-Medium';
+    line-height: 1.6;
+    position: relative;
+    margin: 0 16px;
+}
+/* Ket thu contact */
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 36px;
+    align-items: end;
+    position: relative;
+    margin-top: 64px;
+}
+
+.footer::before {
+    content: '';
+    background-color: var(--gray);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-text {
+    text-align: start;
+    color: var(--white);
+    font-family: 'DTPhudu-Medium';
+    font-size: 0.8rem;
+}
+.footer-logo {
+    width: 200px;
+}
+.footer-slogan {
+    text-align: end;
+    color: var(--white);
+    font-family: 'DTPhudu-Medium';
+    font-size: 0.8rem;
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .intro-left {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .intro-left-title{
+        font-size: 3rem;
+    }
+
+    .intro-right {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .intro-right-img {
+        max-width: 100%;
+    }
+
+    .product-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .intro-left {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .intro-left-title{
+        font-size: 2.2rem;
+    }
+
+    .intro-left-sub-title{
+        font-size: 1.6rem;
+    }
+
+    .intro-left-p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        padding-top: 24px;
+    }
+
+    .header-logo {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .header-logo a img {
+        width: 100%;
+    }
+
+    .header-menu {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .menu-item {
+        padding-left: 32px;
+    }
+
+    .menu-item-link{
+        font-size: 0.8rem;
+    }
+
+    .intro{
+        padding: 12px;
+    }
+
+    .intro-left {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+    }
+
+    .intro-left-title{
+        font-size: 1rem;
+    }
+
+    .intro-left-sub-title{
+        font-size: 1rem;
+    }
+
+    .intro-left-p{
+        font-size: 0.6rem;
+    }
+
+    .intro-right {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .intro-right-img {
+        max-width: 100%;
+    }
+
+    .product-intro-title{
+        font-size: 1rem;
+    }
+
+    .product-contain{
+        padding: 12px;
+    }
+
+    .product-title{
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .product-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .web-size {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact-title{
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+
+    .contact-item{
+        padding: 12px 0;
+    }
+
+    .item-icon{
+        max-width: 25px;
+    }
+
+    .item-text{
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 0 12px;
+    }
+    .footer-text{
+        font-size: 0.3rem;
+    }
+
+    .footer-slogan{
+        font-size: 0.3rem;
+    }
+    
+}
