@@ -54,7 +54,7 @@ box-sizing: border-box;
     flex-direction: column;
 }
 .intro-left-title { 
-    font-size: 5.4rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--white);
     font-family: 'DTPhudu-Bold';
