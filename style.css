@@ -147,9 +147,12 @@ box-sizing: border-box;
 .product-item { 
     list-style: none;
 }
-.product-item-img { 
-    width: 100%;
-    
+.product-item-img {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
 }
 /* Ket thuc phan production */
 
