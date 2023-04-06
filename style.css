@@ -529,6 +529,11 @@ box-sizing: border-box;
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
+    .c-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
     .p-12 {
         padding: 12px;
